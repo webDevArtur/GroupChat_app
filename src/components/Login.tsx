@@ -121,7 +121,7 @@ const AuthForm = ({ isLogin }: { isLogin: boolean }) => {
                     <Box p={2}>
                         <Hidden mdDown>
                             <img
-                                src="../../public/login.png"
+                                src="/login.png"
                                 alt="Login Image"
                                 style={{ width: "100%", height: "auto" }}
                             />
