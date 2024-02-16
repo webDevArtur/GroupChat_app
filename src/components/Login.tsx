@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfi
 import { Context } from "../app/App";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { styled } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 
 
 const VisuallyHiddenInput = styled('input')({
