@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { TextField, Button, Typography, Container, Grid, Box, Paper, Link, Hidden } from "@mui/material";
+import { TextField, Button, Typography, Container, Grid, Box, Paper, Hidden } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Context } from "../app/App";
@@ -196,11 +196,11 @@ const AuthForm = ({ isLogin }: { isLogin: boolean }) => {
                             </Button>
                             {!isLogin ? (
                                 <Typography variant="body2" align="center" style={{ marginTop: "1rem" }}>
-                                    Уже есть аккаунт? <NavLink href="/login">Войти</NavLink>
+                                    Уже есть аккаунт? <NavLink to="/login">Войти</NavLink>
                                 </Typography>
                             ) : (
                                 <Typography variant="body2" align="center" style={{ marginTop: "1rem" }}>
-                                    Ещё нет аккаунта? <NavLink href="/register">Зарегистрироваться</NavLink>
+                                    Ещё нет аккаунта? <NavLink to="/register">Зарегистрироваться</NavLink>
                                 </Typography>
                             )}
                         </form>
