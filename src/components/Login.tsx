@@ -195,11 +195,11 @@ const AuthForm = ({ isLogin }: { isLogin: boolean }) => {
                             </Button>
                             {!isLogin ? (
                                 <Typography variant="body2" align="center" style={{ marginTop: "1rem" }}>
-                                    Уже есть аккаунт? <Link href="/login">Войти</Link>
+                                    Уже есть аккаунт? <Link as={NavLink} href="/login">Войти</Link>
                                 </Typography>
                             ) : (
                                 <Typography variant="body2" align="center" style={{ marginTop: "1rem" }}>
-                                    Ещё нет аккаунта? <Link href="/register">Зарегистрироваться</Link>
+                                    Ещё нет аккаунта? <Link as={NavLink} href="/register">Зарегистрироваться</Link>
                                 </Typography>
                             )}
                         </form>
